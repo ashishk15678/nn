@@ -1,10 +1,20 @@
+// Module: test
+#[allow(unused_imports)]
+#[allow(non_snake_case)]
 #[cfg(test)]
-fn test(i: u64, j: u64) -> u64 {
-    i + j
-}
+use crate::node::Node;
 
 #[test]
 fn testing_test() {
-    let result = test(2, 2);
+    let result = 2 + 2;
     assert_eq!(result, 4);
+}
+
+#[test]
+fn Node_new() {
+    let node = Node::new(1.0, 0.5);
+    assert_eq!(node.data, 1.0);
+    assert_eq!(node.weight, 0.5);
+    assert_eq!(node.active, false);
+    assert_eq!(node.activation, None);
 }
