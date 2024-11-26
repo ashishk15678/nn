@@ -1,4 +1,5 @@
 // Module: test
+mod tokenizer;
 #[allow(unused_imports)]
 #[allow(non_snake_case)]
 #[cfg(test)]
